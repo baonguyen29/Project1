@@ -1,0 +1,10 @@
+.slds-carousel {
+    object-fit: contain;
+    height: 250px;
+    width: 250px;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}

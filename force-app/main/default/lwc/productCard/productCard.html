@@ -1,0 +1,44 @@
+<template>
+    <div class="slds-carousel">
+        <div class="slds-carousel__stage"> <h1> Featured Products </h1>
+            <br>
+<lightning-carousel> 
+    <template for:each={someProducts.data} for:item='prod'>     
+        <lightning-carousel-image key={prod.Image_URL__c}
+        src = {prod.Image_URL__c}
+        header = {prod.Name}
+        description = {prod.Description}> 
+        </lightning-carousel-image>        
+    </template>  
+</lightning-carousel>   
+        </div>
+        </div>  
+</template>
+
+<!--<div class="slds-size_1-of-3">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Basic Carousel
+     </div>
+    </div>
+    <div key={prod.name}>Name: {prod.Name}</div>
+        <div key={prod.description}>{prod.Description}</div>
+    <p key={prod.Image__c}>{prod.Image__c}</p>
+    <div key={prod.Image_URL__c}><img src={prod.Image_URL__c}/></div>-->
+<!--    <template for:each={someProducts.data} for:item='prod'>
+    <div class="slds-carousel">
+    <div class="slds-carousel__stage">
+    <div class="slds-carousel__panels" style="transform:translateX(-0%)">
+        <div class="slds-carousel__panel" role="tabpanel" aria-hidden="false" aria-labelledby="indicator-id-94">
+          <a href="#" class="slds-carousel__panel-action slds-text-link_reset" tabindex="0"> 
+            <div class="slds-carousel__image" key={prod.Image_URL__c}>
+              <img src={prod.Image_URL__c} alt={prod.Image__c} />
+            </div>
+            <div class="slds-carousel__content" key={prod.name}>
+              <h2 class="slds-carousel__content-title" key={prod.name}>{prod.Name}</h2>
+              <p key={prod.description}>{prod.Description}</p>
+            </div>
+          </a>
+        </div>
+    </div>
+</div>
+</div> 
+</template>-->
